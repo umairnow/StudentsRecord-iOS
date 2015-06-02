@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>students</key>
+	<array>
+		<dict>
+			<key>location</key>
+			<dict>
+				<key>longitude</key>
+				<integer>0</integer>
+				<key>latitude</key>
+				<integer>0</integer>
+			</dict>
+			<key>name</key>
+			<string>Sam</string>
+			<key>semesters</key>
+			<array>
+				<dict>
+					<key>semester</key>
+					<string>Semester 1</string>
+					<key>marks</key>
+					<integer>60</integer>
+				</dict>
+				<dict>
+					<key>semester</key>
+					<string>Semester 2</string>
+					<key>marks</key>
+					<integer>58</integer>
+				</dict>
+				<dict>
+					<key>semester</key>
+					<string>Semester 3</string>
+					<key>marks</key>
+					<integer>23</integer>
+				</dict>
+				<dict>
+					<key>semester</key>
+					<string>Semester 4</string>
+					<key>marks</key>
+					<integer>43</integer>
+				</dict>
+				<dict>
+					<key>semester</key>
+					<string>Semester 5</string>
+					<key>marks</key>
+					<integer>76</integer>
+				</dict>
+				<dict>
+					<key>semester</key>
+					<string>Semester 6</string>
+					<key>marks</key>
+					<integer>98</integer>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Nick</string>
+			<key>semesters</key>
+			<array>
+				<dict>
+					<key>semester</key>
+					<string>Semester 1</string>
+					<key>marks</key>
+					<integer>60</integer>
+				</dict>
+				<dict>
+					<key>semester</key>
+					<string>Semester 2</string>
+					<key>marks</key>
+					<integer>58</integer>
+				</dict>
+				<dict>
+					<key>semester</key>
+					<string>Semester 3</string>
+					<key>marks</key>
+					<integer>23</integer>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Michael</string>
+			<key>semesters</key>
+			<array>
+				<dict>
+					<key>semester</key>
+					<string>Semester 1</string>
+					<key>marks</key>
+					<integer>60</integer>
+				</dict>
+				<dict>
+					<key>semester</key>
+					<string>Semester 2</string>
+					<key>marks</key>
+					<integer>58</integer>
+				</dict>
+				<dict>
+					<key>semester</key>
+					<string>Semester 3</string>
+					<key>marks</key>
+					<integer>23</integer>
+				</dict>
+				<dict>
+					<key>semester</key>
+					<string>Semester 4</string>
+					<key>marks</key>
+					<integer>43</integer>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>John</string>
+			<key>semesters</key>
+			<array>
+				<dict>
+					<key>semester</key>
+					<string>Semester 1</string>
+					<key>marks</key>
+					<integer>60</integer>
+				</dict>
+				<dict>
+					<key>semester</key>
+					<string>Semester 2</string>
+					<key>marks</key>
+					<integer>58</integer>
+				</dict>
+				<dict>
+					<key>semester</key>
+					<string>Semester 3</string>
+					<key>marks</key>
+					<integer>23</integer>
+				</dict>
+				<dict>
+					<key>semester</key>
+					<string>Semester 4</string>
+					<key>marks</key>
+					<integer>43</integer>
+				</dict>
+				<dict>
+					<key>semester</key>
+					<string>Semester 5</string>
+					<key>marks</key>
+					<integer>65</integer>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Ben</string>
+			<key>semesters</key>
+			<array>
+				<dict>
+					<key>semester</key>
+					<string>Semester 1</string>
+					<key>marks</key>
+					<integer>60</integer>
+				</dict>
+				<dict>
+					<key>semester</key>
+					<string>Semester 2</string>
+					<key>marks</key>
+					<integer>58</integer>
+				</dict>
+				<dict>
+					<key>semester</key>
+					<string>Semester 3</string>
+					<key>marks</key>
+					<integer>23</integer>
+				</dict>
+				<dict>
+					<key>semester</key>
+					<string>Semester 4</string>
+					<key>marks</key>
+					<integer>43</integer>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

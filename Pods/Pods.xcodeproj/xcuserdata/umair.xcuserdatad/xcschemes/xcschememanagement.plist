@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-StudentsRecord-DCKeyValueObjectMapping.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-StudentsRecord-JBChartView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-StudentsRecord-RESideMenu.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-StudentsRecord-TWMessageBarManager.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-StudentsRecord.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>1C2AAA832CCC71975BEB9DC3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5E76AFC82DC23735455C2349</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A70D52C7F81C7B1528267AC1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D771D707208BEBF649827C09</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EB12A14E0892123231725017</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

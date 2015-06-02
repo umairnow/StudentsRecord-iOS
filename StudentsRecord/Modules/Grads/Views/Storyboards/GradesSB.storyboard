@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="eQb-t1-tQ9">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--Grades-->
+        <scene sceneID="yi6-8q-Ocs">
+            <objects>
+                <tableViewController title="Grades" id="rBf-wN-M4D" customClass="GradesVC" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="MPj-dw-g6W">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="StudentsNames" textLabel="78n-OO-GlM" style="IBUITableViewCellStyleDefault" id="juZ-pJ-XPH">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="juZ-pJ-XPH" id="ECM-t0-Hui">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="78n-OO-GlM">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="jfZ-Eq-N9P" kind="show" identifier="StudentDetails" id="UyC-0t-XCS"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="rBf-wN-M4D" id="2Mm-mc-Gqy"/>
+                            <outlet property="delegate" destination="rBf-wN-M4D" id="dFR-9u-b1V"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Grades" id="ldN-TX-nOb"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6bE-uE-TPN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="742" y="365"/>
+        </scene>
+        <!--Semester Vise Grades-->
+        <scene sceneID="ziH-gX-cCe">
+            <objects>
+                <viewController id="jfZ-Eq-N9P" customClass="SemesterVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WCa-hd-cxO"/>
+                        <viewControllerLayoutGuide type="bottom" id="KbG-Uh-NvP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FbZ-LE-PAY">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="5V6-CU-1v4">
+                                <rect key="frame" x="20" y="74" width="560" height="29"/>
+                                <segments>
+                                    <segment title="List"/>
+                                    <segment title="Bar"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentedControlValueChanged:" destination="jfZ-Eq-N9P" eventType="valueChanged" id="m38-8Z-cMP"/>
+                                </connections>
+                            </segmentedControl>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vhj-RI-a8K">
+                                <rect key="frame" x="0.0" y="112" width="600" height="488"/>
+                                <connections>
+                                    <segue destination="o4o-nq-hsl" kind="embed" identifier="SemesterDetails" id="OO4-lu-j9S"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="vhj-RI-a8K" secondAttribute="trailing" id="4QO-yl-dde"/>
+                            <constraint firstAttribute="trailing" secondItem="5V6-CU-1v4" secondAttribute="trailing" constant="20" id="AqU-4b-nLf"/>
+                            <constraint firstItem="KbG-Uh-NvP" firstAttribute="top" secondItem="vhj-RI-a8K" secondAttribute="bottom" id="CCA-n9-arh"/>
+                            <constraint firstItem="vhj-RI-a8K" firstAttribute="top" secondItem="5V6-CU-1v4" secondAttribute="bottom" constant="10" id="KXF-92-5oN"/>
+                            <constraint firstItem="vhj-RI-a8K" firstAttribute="leading" secondItem="FbZ-LE-PAY" secondAttribute="leading" id="O20-vy-TcZ"/>
+                            <constraint firstItem="5V6-CU-1v4" firstAttribute="top" secondItem="WCa-hd-cxO" secondAttribute="bottom" constant="10" id="UlM-ea-yfs"/>
+                            <constraint firstItem="5V6-CU-1v4" firstAttribute="leading" secondItem="FbZ-LE-PAY" secondAttribute="leading" constant="20" id="VVA-YK-Kgv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Semester Vise Grades" id="h7Z-W1-eEj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0EO-tO-RAN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1453" y="365"/>
+        </scene>
+        <!--Grades-->
+        <scene sceneID="BUs-cA-sBC">
+            <objects>
+                <navigationController title="Grades" id="eQb-t1-tQ9" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JZR-QN-ol2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="rBf-wN-M4D" kind="relationship" relationship="rootViewController" id="Wkn-8q-ldW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BCc-po-bvg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="40" y="365"/>
+        </scene>
+        <!--Semester ListVC-->
+        <scene sceneID="L6c-Mz-8pE">
+            <objects>
+                <tableViewController storyboardIdentifier="SemesterListVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="EpR-60-L1Y" customClass="SemesterListVC" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ZRj-0c-Vr3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SemesterGrades" textLabel="Thz-xj-bCC" detailTextLabel="9LK-Na-NI6" style="IBUITableViewCellStyleValue1" id="xCO-d5-AGI">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xCO-d5-AGI" id="p2o-0q-I5w">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Thz-xj-bCC">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9LK-Na-NI6">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="EpR-60-L1Y" id="9CW-u7-bXb"/>
+                            <outlet property="delegate" destination="EpR-60-L1Y" id="dad-Cl-N0y"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HhF-qf-RJZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2851" y="32"/>
+        </scene>
+        <!--Semester BarVC-->
+        <scene sceneID="TgN-d9-pXZ">
+            <objects>
+                <viewController storyboardIdentifier="SemesterBarVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4FY-eC-aSP" customClass="SemesterBarVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RHk-yC-cxU"/>
+                        <viewControllerLayoutGuide type="bottom" id="Gql-cD-nPL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JeM-Pg-SiD">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eTS-cI-snZ">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oM1-6B-rGq" customClass="JBBarChartView">
+                                        <rect key="frame" x="20" y="150" width="600" height="300"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="300" id="BE2-s6-GOw"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="headerPadding">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="inverted" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="minimumValue">
+                                                <integer key="value" value="0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="oM1-6B-rGq" secondAttribute="trailing" constant="20" id="Cg7-lb-4LJ"/>
+                                    <constraint firstItem="oM1-6B-rGq" firstAttribute="leading" secondItem="eTS-cI-snZ" secondAttribute="leading" constant="20" id="Org-Q9-yhH"/>
+                                    <constraint firstAttribute="centerY" secondItem="oM1-6B-rGq" secondAttribute="centerY" id="VJV-yl-Tte"/>
+                                    <constraint firstAttribute="width" secondItem="oM1-6B-rGq" secondAttribute="width" id="Xia-zj-Go7"/>
+                                    <constraint firstAttribute="bottom" secondItem="oM1-6B-rGq" secondAttribute="bottom" constant="20" id="kAs-cZ-qQ9"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eTS-cI-snZ" firstAttribute="top" secondItem="JeM-Pg-SiD" secondAttribute="top" id="G09-uu-qqd"/>
+                            <constraint firstItem="eTS-cI-snZ" firstAttribute="leading" secondItem="JeM-Pg-SiD" secondAttribute="leading" id="GSr-5n-nEX"/>
+                            <constraint firstAttribute="trailing" secondItem="eTS-cI-snZ" secondAttribute="trailing" id="PMV-TG-0og"/>
+                            <constraint firstAttribute="bottom" secondItem="eTS-cI-snZ" secondAttribute="bottom" id="a6G-YS-R6i"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="barChartView" destination="oM1-6B-rGq" id="SFR-Vp-iX5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0VJ-VF-pSt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2851" y="706"/>
+        </scene>
+        <!--Semester Detail ContainerVC-->
+        <scene sceneID="pFN-pn-NqW">
+            <objects>
+                <viewController id="o4o-nq-hsl" customClass="SemesterDetailContainerVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ORI-E6-eI5"/>
+                        <viewControllerLayoutGuide type="bottom" id="usG-mh-7X1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ojw-Ai-geU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="488"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="EpR-60-L1Y" kind="custom" identifier="SegmentList" customClass="EmptySegue" id="i7b-mY-Te4"/>
+                        <segue destination="4FY-eC-aSP" kind="custom" identifier="SegmentBar" customClass="EmptySegue" id="PO3-hE-7Wm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BGr-Xh-GcR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2134" y="365"/>
+        </scene>
+    </scenes>
+</document>

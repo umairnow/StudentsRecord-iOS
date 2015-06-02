@@ -1,0 +1,6 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/DCKeyValueObjectMapping" "${PODS_ROOT}/Headers/Public/JBChartView" "${PODS_ROOT}/Headers/Public/RESideMenu" "${PODS_ROOT}/Headers/Public/TWMessageBarManager"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/DCKeyValueObjectMapping" -isystem "${PODS_ROOT}/Headers/Public/JBChartView" -isystem "${PODS_ROOT}/Headers/Public/RESideMenu" -isystem "${PODS_ROOT}/Headers/Public/TWMessageBarManager"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"Pods-StudentsRecord-DCKeyValueObjectMapping" -l"Pods-StudentsRecord-JBChartView" -l"Pods-StudentsRecord-RESideMenu" -l"Pods-StudentsRecord-TWMessageBarManager" -framework "QuartzCore"
+OTHER_LIBTOOLFLAGS = $(OTHER_LDFLAGS)
+PODS_ROOT = ${SRCROOT}/Pods

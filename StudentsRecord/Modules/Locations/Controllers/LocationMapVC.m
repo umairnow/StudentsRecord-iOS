@@ -37,8 +37,15 @@ static NSString * const AnnotIdentifier     = @"LocAnnotation";
 {
     [super viewDidLoad];
     [self initializeVariables];
+    [self setupAppearance];
     [self loadData];
 }
+
+- (void)setupAppearance
+{
+    [self addMenuButton];
+}
+
 
 - (void)initializeVariables
 {
